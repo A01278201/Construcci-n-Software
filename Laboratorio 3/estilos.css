@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+#sobre_mi {
+    background-color: #e0f7fa !important; 
+    padding: 15px;
+    border-left: 5px solid #00796b;
+    margin-bottom: 20px;
+}
+
+.destacado {
+    color: #d84315 !important; 
+    font-weight: bold;
+}
+
+p.destacado {
+    font-style: italic;
+}
+
+section#preguntas ol li {
+    margin-bottom: 15px;
+}
+
+a:hover {
+    color: #0288d1;
+    text-decoration: underline;
+}
+
+#preguntas_lab3 {
+    background-color: #e8f5e9;
+    border-left: 4px solid #388e3c;
+    padding: 15px 15px 15px 25px;
+    margin-top: 30px;
+}
+
+#preguntas_lab3 h2 {
+    color: #1b5e20;
+    margin-bottom: 10px;
+}
+
+#preguntas_lab3 ol li {
+    margin-bottom: 15px;
+}
+
+
+#referencias {
+    background-color: #fff3e0;
+    padding: 15px;
+    border: 1px solid #ffcc80 !important; 
+}
+
+h1, h2 {
+    color: #263238 !important; 
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid #bdbdbd;
+    font-size: 0.9em;
+    color: #616161;
+}
+
