@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Validador de Contraseñas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Validador de Contraseñas</h1>
+
+  <form id="passwordForm">
+    <div class="form-group">
+      <label for="password">Contraseña:</label><br>
+      <input type="text" id="password"
+      onfocus="showHelp('passHelp')"
+             onblur="hideHelp('passHelp')"
+             oninput="validatePassword()">
+      <div id="passHelp" class="message">
+        Debe tener al menos 8 caracteres, una mayúscula y un número.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="confirm">Confirmar contraseña:</label><br>
+      <input type="password" id="confirm" oninput="checkMatch()">
+      <div id="matchMsg" class="message">Las contraseñas no coinciden.</div>
+    </div>
+
+    <button type="submit" id="submitBtn" disabled>Validar</button>
+    <div id="successMessage" class="success-msg"></div>
+
+  </form>
+
+  <hr>
+
+  <section id="preguntas">
+    <h2>Preguntas de reflexión</h2>
+    <ol>
+      <li>
+        <strong>¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?</strong>
+        <p>Porque permite brindar una retroalimentación inmediata al usuario, mejorando la experiencia al evitar recargas innecesarias. Además, reduce la carga del servidor al filtrar datos inválidos desde el cliente.</p>
+      </li>
+      <li>
+        <strong>¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</strong>
+        <p>Desactivando JavaScript en el navegador o manipulando el código fuente desde las herramientas de desarrollador. También se pueden enviar peticiones directamente al servidor sin pasar por la interfaz del formulario.</p>
+      </li>
+      <li>
+        <strong>Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</strong>
+        <p>Porque su propósito es mejorar la experiencia del usuario, no sustituir la validación en el servidor. JavaScript valida rápidamente del lado del cliente, pero las validaciones críticas deben repetirse en el servidor para garantizar seguridad y confiabilidad.</p>
+      </li>
+    </ol>
+  </section>
+  
+  <hr>
+
+  <section id="fuentes">
+    <h2>Fuentes consultadas</h2>
+    <ul>
+      <li><a href="https://www.w3schools.com/jsref/prop_style_visibility.asp" target="_blank">https://www.w3schools.com/jsref/prop_style_visibility.asp</a></li>
+      <li><a href="https://www.w3schools.com/css/css_font.asp" target="_blank">https://www.w3schools.com/css/css_font.asp</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions" target="_blank">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions</a></li>
+      <li><a href="https://owasp.org/www-community/attacks/Input_Validation" target="_blank">https://owasp.org/www-community/attacks/Input_Validation</a></li>
+      <li><a href="https://www.freecodecamp.org/news/client-side-vs-server-side-validation/" target="_blank">https://www.freecodecamp.org/news/client-side-vs-server-side-validation/</a></li>
+    </ul>
+  </section>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
