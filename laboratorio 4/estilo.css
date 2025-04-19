@@ -52,5 +52,18 @@ body {
     color: #333;
     margin-top: 8px;
   }
+
+  section h2 {
+    color: #003366;
+    margin-top: 30px;
+  }
   
+  ol li, ul li {
+    margin-bottom: 10px;
+  }
+  
+  ol li p, ul li a {
+    font-size: 15px;
+    color: #222;
+  }
   
