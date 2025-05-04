@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('includes/head') %>
+<body>
+  <%- include('includes/nav') %>
+  <main>
+    <h1><%= titulo %></h1>
+    <% if (precios.length) { %>
+      <table>
+        <thead><tr><th>Precio</th></tr></thead>
+        <tbody>
+          <% precios.forEach(p => { %>
+            <tr><td><%= p.valor %></td></tr>
+          <% }) %>
+        </tbody>
+      </table>
+      <p>Total: <%= total %></p>
+    <% } else { %>
+      <p>No hay precios registrados.</p>
+    <% } %>
+  </main>
+  <%- include('includes/footer') %>
+</body>
+</html>

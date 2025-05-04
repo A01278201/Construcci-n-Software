@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('includes/head') %>
+<body>
+  <%- include('includes/nav') %>
+  <main>
+    <h1><%= titulo %></h1>
+    <form action="/add" method="POST">
+      <label for="precio">Precio:</label>
+      <input type="number" step="0.01" id="precio" name="precio" required>
+      <button type="submit">Guardar</button>
+    </form>
+  </main>
+  <%- include('includes/footer') %>
+</body>
+</html>
