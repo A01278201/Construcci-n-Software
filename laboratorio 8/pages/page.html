@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratorio 1</title>
+</head>
+<body>
+
+    <header>
+        <h1>Laboratorio 1</h1>
+        <p><strong>Nombre:</strong> Alfredo Arriaga Morales</p>
+        <p><strong>Matrícula:</strong> A01278201</p>
+        <p><strong>Correo electrónico:</strong> a01278201@tec.mx</p>
+    </header>
+
+    <main>
+        <section id="sobre_mi">
+            <h2>SOBRE MÍ</h2>
+            Hola, mi nombre es Alfredo aunque prefiero que me digan Fredy. Soy recién llegado a TEC CAMPUS QRO, ya que vengo procedente del TEC CAMPUS HIDALGO.<br>
+            Entre mis principales gustos se encuentra el fútbol, me gusta mucho mirarlo y jugarlo. También practico otros deportes como atletismo o natación.<br>
+            Me gusta mucho la música y como dato curioso compongo e improviso letras de hip hop.<br>
+        </section>
+
+        <section id="preguntas">
+            <h2>Preguntas</h2>
+            <ol>
+                <li>
+                    <strong>¿Cuál es la diferencia entre Internet y la World Wide Web?</strong><br>
+                    Internet es la red física que conecta computadoras en todo el mundo, mientras que la Web es un sistema de información que utiliza Internet para acceder a documentos y páginas mediante navegadores.
+                </li>
+                <p></p>
+                <li>
+                    <strong>¿Cuáles son las partes de un URL?</strong><br>
+                    Protocolo (http/https), nombre de dominio, puerto (opcional), ruta del archivo, parámetros y fragmentos (hash).
+                </li>
+                <p></p>
+                <li>
+                    <strong>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</strong><br>
+                    - <strong>GET:</strong> Obtener datos del servidor.<br>
+                    - <strong>HEAD:</strong> Obtener solo los encabezados de la respuesta.<br>
+                    - <strong>POST:</strong> Enviar datos al servidor para crear algo nuevo.<br>
+                    - <strong>PUT:</strong> Reemplazar completamente un recurso.<br>
+                    - <strong>PATCH:</strong> Actualizar parcialmente un recurso.<br>
+                    - <strong>DELETE:</strong> Eliminar un recurso.
+                </li>
+                <p></p>
+                <li>
+                    <strong>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?</strong><br>
+                    Se debe usar <strong>POST</strong>, porque los datos se envían en el cuerpo de la solicitud y no quedan visibles en la URL, lo cual brinda más seguridad.
+                </li>
+                <p></p>
+                <li>
+                    <strong>¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?</strong><br>
+                    Se utiliza el método <strong>GET</strong>.
+                </li>
+                <p></p>
+                <li>
+                    <strong>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?</strong><br>
+                    Significa que la solicitud fue exitosa. No ocurrió ningún error.
+                </li>
+                <p></p>
+                <li>
+                    <strong>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</strong><br>
+                    Sí, porque un error 404 indica que una página solicitada no existe. El desarrollador debe revisar enlaces rotos o rutas mal configuradas.
+                </li>
+                <p></p>
+                <li>
+                    <strong>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?</strong><br>
+                    Sí, ya que un error 500 indica un fallo en el servidor. Esto generalmente está relacionado con errores en el código del lado del servidor.
+                </li>
+                <p></p>
+                <li>
+                    <strong>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</strong><br>
+                    Significa que ya no se recomienda su uso porque hay alternativas mejores. Ejemplos: &lt;font&gt;, &lt;center&gt;, &lt;bgsound&gt;.
+                </li>
+                <p></p>
+                <li>
+                    <strong>¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</strong><br>
+                    HTML5 incorpora etiquetas semánticas (&lt;header&gt;, &lt;footer&gt;, &lt;article&gt;), soporte para multimedia (&lt;audio&gt;, &lt;video&gt;), formularios mejorados y es más amigable con dispositivos móviles.
+                </li>
+                <p></p>
+                <li>
+                    <strong>¿Qué componentes de estructura y estilo tiene una tabla?</strong><br>
+                    Estructura: &lt;table&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;.<br>
+                    Estilo: Se aplica con CSS (bordes, colores, alineación, espaciado, etc.).
+                </li>
+                <p></p>
+                <li>
+                    <strong>¿Cuáles son los principales controles de una forma HTML5?</strong><br>
+                    &lt;input&gt; (text, email, number, date, etc.), &lt;textarea&gt;, &lt;select&gt;, &lt;button&gt;, &lt;label&gt;.
+                </li>
+                <p></p>
+                <li>
+                    <strong>¿Qué tanto soporte HTML5 tiene el navegador que utilizas?</strong><br>
+                    La mayoría de los navegadores modernos como Chrome, Firefox, Edge o Safari tienen soporte casi completo para HTML5.
+                </li>
+            </ol>
+        </section>
+
+        <section id="referencias">
+            <h2>Referencias</h2>
+            <p>https://developer.mozilla.org/es/</p>
+            <p>https://html.com/html5/</p>
+            <p>https://www.w3schools.com/html/</p>
+            <p>https://www.freecodecamp.org/espanol/</p>
+            <p>https://caniuse.com/</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Página creada con el editor <strong>Visual Studio Code</strong>. 
+        Visita: <a href="https://code.visualstudio.com/" target="_blank">https://code.visualstudio.com/</a></p>
+        <p>Valida esta página en: <a href="https://validator.w3.org/" target="_blank">https://validator.w3.org/</a></p>
+    </footer>
+
+</body>
+</html>
