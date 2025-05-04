@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('includes/head') %>
+<body>
+  <%- include('includes/nav') %>
+  <main>
+    <h1>Bienvenido, <%= username %></h1>
+    <% if (success_msg) { %>
+      <p class="success"><%= success_msg %></p>
+    <% } %>
+    <p>Tu última login fue: <%= lastLogin %></p>
+  </main>
+</body>
+</html>

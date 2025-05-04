@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('includes/head') %>
+<body>
+  <%- include('includes/nav') %>
+  <main>
+    <h1>Login</h1>
+    <% if (error_msg) { %>
+      <p class="error"><%= error_msg %></p>
+    <% } %>
+    <% if (success_msg) { %>
+      <p class="success"><%= success_msg %></p>
+    <% } %>
+    <form action="/login" method="POST">
+      <label>Username:<input type="text" name="username" required></label><br>
+      <label>Password:<input type="password" name="password" required></label><br>
+      <button type="submit">Entrar</button>
+    </form>
+  </main>
+</body>
+</html>
