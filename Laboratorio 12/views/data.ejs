@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('includes/head') %>
+<body>
+  <%- include('includes/nav') %>
+  <main>
+    <h1>Datos Recibidos</h1>
+    <% if (lista.length) { %>
+      <ul>
+        <% lista.forEach(item => { %>
+          <li><%= item %></li>
+        <% }) %>
+      </ul>
+    <% } else { %>
+      <p>No hay datos aún.</p>
+    <% } %>
+  </main>
+  <%- include('includes/footer') %>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('includes/head') %>
+<body>
+  <%- include('includes/nav') %>
+  <main>
+    <h1>Enviar Dato</h1>
+    <form action="/form" method="POST">
+      <label for="dato">Dato:</label>
+      <input type="text" id="dato" name="dato" required>
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+  <%- include('includes/footer') %>
+</body>
+</html>
